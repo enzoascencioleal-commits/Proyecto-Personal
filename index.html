@@ -1,43 +1,159 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mi Primera Página</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: linear-gradient(to right, #74ebd5, #ACB6E5);
-      color: #333;
-      text-align: center;
-      padding: 50px;
-    }
-    h1 {
-      color: #222;
-    }
-    button {
-      background: #333;
-      color: #fff;
-      padding: 10px 20px;
-      border: none;
-      cursor: pointer;
-      margin-top: 20px;
-      border-radius: 5px;
-    }
-    button:hover {
-      background: #555;
-    }
-  </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0e1015" />
+  <title>Mi Web Elegante</title>
+
+  <!-- Fuente elegante y ligera -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/style.css" />
 </head>
 <body>
-  <h1>¡Hola Mundo! 🌍</h1>
-  <p>Esta es mi primera página en GitHub Pages 🚀</p>
-  <button onclick="saludar()">Haz clic aquí</button>
+  <!-- Header / Nav -->
+  <header class="site-header" id="top">
+    <a class="brand" href="#hero" aria-label="Ir al inicio">✨ MiSitio</a>
 
-  <script>
-    function saludar() {
-      alert("¡Gracias por visitar mi página! 🎉");
-    }
-  </script>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Abrir menú">
+      <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+    </button>
+
+    <nav id="site-nav" class="site-nav" aria-label="Navegación principal">
+      <a href="#hero" class="nav-link">Inicio</a>
+      <a href="#about" class="nav-link">Sobre mí</a>
+      <a href="#features" class="nav-link">Características</a>
+      <a href="#contact" class="nav-link">Contacto</a>
+      <a href="https://github.com/" target="_blank" rel="noopener" class="btn btn--sm">GitHub</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="hero" class="section hero">
+    <div class="hero__bg" aria-hidden="true"></div>
+    <div class="container hero__content">
+      <h1 class="reveal fade-up delay-1">
+        Construye <span class="gradient">experiencias web</span> modernas
+      </h1>
+      <p class="muted reveal fade-up delay-2">
+        Base minimalista, elegante y animada para iniciar tu sitio en GitHub Pages.
+      </p>
+      <div class="reveal fade-up delay-3">
+        <a href="#features" class="btn btn--primary">Ver características</a>
+        <a href="#about" class="btn btn--ghost">Saber más</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sobre mí -->
+  <section id="about" class="section">
+    <div class="container grid-2">
+      <div class="reveal slide-right">
+        <h2>Sobre mí</h2>
+        <p>
+          Me apasiona crear interfaces rápidas, accesibles y hermosas. Esta plantilla está
+          pensada para crecer contigo: componentes reutilizables, animaciones suaves y un
+          sistema de diseño con variables CSS.
+        </p>
+        <ul class="ticks">
+          <li>Responsive y accesible</li>
+          <li>Rendimiento primero</li>
+          <li>Sin dependencias pesadas</li>
+        </ul>
+      </div>
+      <div class="reveal zoom-in">
+        <div class="glass card-media">
+          <!-- SVG decorativo -->
+          <svg width="100%" height="100%" viewBox="0 0 300 200" role="img" aria-label="Ilustración abstracta">
+            <defs>
+              <linearGradient id="g1" x1="0" x2="1">
+                <stop offset="0%" stop-color="#6EE7F9" />
+                <stop offset="100%" stop-color="#A78BFA" />
+              </linearGradient>
+              <filter id="blur" x="-10%" y="-10%" width="120%" height="120%">
+                <feGaussianBlur stdDeviation="12" />
+              </filter>
+            </defs>
+            <circle cx="70" cy="60" r="50" fill="url(#g1)" filter="url(#blur)"/>
+            <rect x="120" y="30" width="160" height="120" rx="18" fill="url(#g1)" opacity="0.5"/>
+            <circle cx="220" cy="140" r="40" fill="url(#g1)" />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Características -->
+  <section id="features" class="section alt">
+    <div class="container">
+      <h2 class="center reveal fade-up">Características</h2>
+      <p class="center muted reveal fade-up delay-1">
+        Animaciones al desplazarte + componentes listos para copiar/pegar.
+      </p>
+
+      <div class="cards">
+        <article class="card reveal fade-up">
+          <h3>Animaciones suaves</h3>
+          <p>Basadas en IntersectionObserver. Sin jQuery ni librerías pesadas.</p>
+        </article>
+        <article class="card reveal fade-up delay-1">
+          <h3>Diseño elegante</h3>
+          <p>Tipografía limpia, gradientes sutiles, sombras suaves y glassmorphism.</p>
+        </article>
+        <article class="card reveal fade-up delay-2">
+          <h3>Rendimiento</h3>
+          <p>CSS y JS mínimos, carga rápida y desplazamiento fluido.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contact" class="section">
+    <div class="container grid-2">
+      <div class="reveal slide-left">
+        <h2>Hablemos</h2>
+        <p>¿Ideas, proyectos o preguntas? Envíame un mensaje.</p>
+        <ul class="social">
+          <li><a href="#" aria-label="Twitter">🐦 Twitter</a></li>
+          <li><a href="#" aria-label="Instagram">📸 Instagram</a></li>
+          <li><a href="#" aria-label="LinkedIn">💼 LinkedIn</a></li>
+        </ul>
+      </div>
+
+      <form class="form glass reveal zoom-in" autocomplete="on" netlify>
+        <label>
+          <span>Nombre</span>
+          <input type="text" name="name" placeholder="Tu nombre" required />
+        </label>
+        <label>
+          <span>Email</span>
+          <input type="email" name="email" placeholder="tunombre@email.com" required />
+        </label>
+        <label>
+          <span>Mensaje</span>
+          <textarea name="message" rows="4" placeholder="Cuéntame…" required></textarea>
+        </label>
+        <button type="submit" class="btn btn--primary">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> MiSitio. Hecho con ♥ y buenas prácticas.</p>
+      <a href="#top" class="btn btn--sm btn--ghost">Ir arriba</a>
+    </div>
+  </footer>
+
+  <!-- Botón flotante volver arriba -->
+  <button class="to-top" aria-label="Volver arriba">
+    ↑
+  </button>
+
+  <script src="scripts/main.js" defer></script>
 </body>
 </html>
