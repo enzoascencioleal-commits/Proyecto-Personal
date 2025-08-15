@@ -3,11 +3,41 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mi Página en GitHub</title>
+  <title>Mi Primera Página</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #74ebd5, #ACB6E5);
+      color: #333;
+      text-align: center;
+      padding: 50px;
+    }
+    h1 {
+      color: #222;
+    }
+    button {
+      background: #333;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      margin-top: 20px;
+      border-radius: 5px;
+    }
+    button:hover {
+      background: #555;
+    }
+  </style>
 </head>
 <body>
-  <h1>¡Hola Mundo desde GitHub Pages! 🎉</h1>
-  <p>Si estás viendo esto, significa que mi página funciona 🚀</p>
+  <h1>¡Hola Mundo! 🌍</h1>
+  <p>Esta es mi primera página en GitHub Pages 🚀</p>
+  <button onclick="saludar()">Haz clic aquí</button>
+
+  <script>
+    function saludar() {
+      alert("¡Gracias por visitar mi página! 🎉");
+    }
+  </script>
 </body>
 </html>
-
