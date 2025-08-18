@@ -3,20 +3,27 @@
 <head> 
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0e1015" />
   <title>Alemán B1 – Mi Web Elegante</title>
-  <link rel="stylesheet" href="../styles/style.css" />
+
+  <!-- Fuente igual que index.html -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- CSS en la raíz -->
+  <link rel="stylesheet" href="styles/style.css" />
 </head>
 <body>
-  <header class="site-header">
+  <header class="site-header" id="top">
     <a class="brand" href="index.html">✨ MiSitio</a>
-    <nav class="site-nav">
-      <a href="index.html">Inicio</a>
+    <nav class="site-nav" aria-label="Navegación principal">
+      <a href="index.html#hero" class="nav-link">Inicio</a>
       <a href="ingles.html" class="nav-link">Inglés B1</a>
       <a href="aleman.html" class="nav-link">Alemán B1</a>
     </nav>
   </header>
 
   <section class="section hero">
+    <div class="hero__bg" aria-hidden="true"></div>
     <div class="container hero__content">
       <h1>🇩🇪 Alemán B1</h1>
       <p class="muted">Material de estudio en secciones claras.</p>
@@ -38,8 +45,12 @@
   </section>
 
   <footer class="site-footer">
-    <div class="container">© 2025 MiSitio</div>
+    <div class="container footer__inner">
+      <p>© 2025 MiSitio. Hecho con ♥ y buenas prácticas.</p>
+      <a href="#top" class="btn btn--sm btn--ghost">Ir arriba</a>
+    </div>
   </footer>
+
+  <a href="#top" class="to-top" aria-label="Volver arriba">↑</a>
 </body>
 </html>
-
