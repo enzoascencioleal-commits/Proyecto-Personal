@@ -3,42 +3,790 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0e1015" />
   <title>Inglés B1 – Mi Web Elegante</title>
+
+  <!-- Fuentes y estilos (mismos que index.html) -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/style.css" />
 </head>
 <body>
-  <header class="site-header">
-    <a class="brand" href="index.html">✨ MiSitio</a>
-    <nav class="site-nav">
-      <a href="index.html">Inicio</a>
+  <!-- Header -->
+  <header class="site-header" id="top">
+    <a class="brand" href="index.html" aria-label="Ir al inicio">✨ MiSitio</a>
+    <nav class="site-nav" aria-label="Navegación principal">
+      <a href="index.html#hero" class="nav-link">Inicio</a>
+      <a href="index.html#about" class="nav-link">Sobre mí</a>
       <a href="ingles.html" class="nav-link">Inglés B1</a>
       <a href="aleman.html" class="nav-link">Alemán B1</a>
+      <a href="index.html#features" class="nav-link">Características</a>
+      <a href="index.html#contact" class="nav-link">Contacto</a>
     </nav>
   </header>
 
+  <!-- Hero -->
   <section class="section hero">
+    <div class="hero__bg" aria-hidden="true"></div>
     <div class="container hero__content">
-      <h1>Inglés B1</h1>
-      <p class="muted">Todo tu material organizado por categorías.</p>
+      <h1>🇬🇧 Inglés B1</h1>
+      <p class="muted">Curso B1 organizado: Gramática, Vocabulario, Reading y Writing. Sin JS, accesible y listo para estudiar.</p>
+      <nav class="tabs center">
+        <a href="#grammar">📘 Gramática</a>
+        <a href="#vocab">🗣️ Vocabulario</a>
+        <a href="#reading">📖 Reading</a>
+        <a href="#writing">✍️ Writing</a>
+      </nav>
     </div>
   </section>
 
-  <section class="section">
+  <!-- ============ GRAMÁTICA ============ -->
+  <section id="grammar" class="section">
     <div class="container">
       <h2>📘 Gramática</h2>
-      <p>Aquí agregas tus temas de gramática B1 (ej. Present Perfect, Conditionals…)</p>
+
+      <!-- Tema 1: Present Simple vs Present Continuous -->
+      <details open class="reveal fade-up">
+        <summary><h3>1) Present Simple vs Present Continuous</h3></summary>
+        <article class="card">
+          <h4>Explicación</h4>
+          <p><b>Present Simple</b>: hábitos/verdades. <i>I play every Saturday.</i> <br>
+             <b>Present Continuous</b>: ahora/temporal. <i>I am studying now.</i></p>
+        </article>
+        <article class="card">
+          <h4>Ejercicios (15)</h4>
+          <ol>
+            <li>She usually __(go)__ to school by bus, but today she __(walk)__.</li>
+            <li>Listen! The birds __(sing)__ in the garden.</li>
+            <li>My father __(work)__ in a bank.</li>
+            <li>Right now, I __(do)__ my homework.</li>
+            <li>They __(not/play)__ tennis on Sundays.</li>
+            <li>Look! He __(run)__ very fast.</li>
+            <li>(MC) He usually … to the gym after school. a) is going b) goes c) go</li>
+            <li>(MC) They … TV at the moment. a) watch b) are watching c) watches</li>
+            <li>(MC) My brother … in London this week. a) is staying b) stays c) stay</li>
+            <li>(MC) She … like pizza very much. a) doesn’t b) isn’t c) don’t</li>
+            <li>(Transf) now/she/study/for the exam → She …</li>
+            <li>(Transf) always/he/drink/coffee in the morning → He …</li>
+            <li>(Transf) listen!/the baby/cry → Listen! The baby …</li>
+            <li>(Short) What do you usually do after school? (Present Simple)</li>
+            <li>(Short) What are you doing right now? (Present Continuous)</li>
+          </ol>
+          <details><summary>Mini evaluación (5)</summary>
+            <ol>
+              <li>Maria … her homework every day. a) does b) is doing c) do</li>
+              <li>Look! It … outside. a) rains b) is raining c) raining</li>
+              <li>I … usually … coffee in the morning. a) am/drinking b) drink c) drinks</li>
+              <li>Right now, we … in the park. a) sit b) are sitting c) sits</li>
+              <li>Tom always … to school by bike. a) goes b) is going c) go</li>
+            </ol>
+          </details>
+        </article>
+      </details>
+
+      <!-- Tema 2: Past Simple vs Past Continuous -->
+      <details class="reveal fade-up">
+        <summary><h3>2) Past Simple vs Past Continuous</h3></summary>
+        <article class="card">
+          <h4>Explicación</h4>
+          <p><b>Past Simple</b>: acción terminada. <i>I visited London.</i><br>
+             <b>Past Continuous</b>: en progreso/interrumpida. <i>I was watching TV when…</i></p>
+        </article>
+        <article class="card">
+          <h4>Ejercicios (15)</h4>
+          <ol>
+            <li>While I __(read)__, my brother __(play)__ video games.</li>
+            <li>They __(not/go)__ to school yesterday because it was raining.</li>
+            <li>At 8 p.m. last night, we __(have)__ dinner.</li>
+            <li>I __(fall)__ asleep while I __(watch)__ a film.</li>
+            <li>When I __(open)__ the window, the sun __(shine)__.</li>
+            <li>She __(meet)__ her best friend when she __(live)__ in Madrid.</li>
+            <li>(MC) While I … to music, my sister was studying. a) listened b) was listening c) listens</li>
+            <li>(MC) We … football yesterday afternoon. a) played b) were playing c) play</li>
+            <li>(MC) He … a shower when the phone rang. a) took b) takes c) was taking</li>
+            <li>(MC) They … TV when I arrived. a) watched b) were watching c) watch</li>
+            <li>(Transf) he/not watch/TV yesterday → He …</li>
+            <li>(Transf) she/cook/dinner when I arrived → She …</li>
+            <li>(Transf) they/play/football at 6 o’clock yesterday → They …</li>
+            <li>(Short) What did you do last weekend?</li>
+            <li>(Short) What were you doing yesterday at 7 p.m.?</li>
+          </ol>
+          <details><summary>Mini evaluación (5)</summary>
+            <ol>
+              <li>I __(read)__ a book when the lights went out.</li>
+              <li>They __(not/visit)__ their grandparents last weekend.</li>
+              <li>While she __(walk)__ home, it started to rain.</li>
+              <li>We __(see)__ an accident while we __(drive)__ to work.</li>
+              <li>He __(study)__ English yesterday evening.</li>
+            </ol>
+          </details>
+        </article>
+      </details>
+
+      <!-- Tema 3: Present Perfect vs Past Simple -->
+      <details class="reveal fade-up">
+        <summary><h3>3) Present Perfect vs Past Simple</h3></summary>
+        <article class="card">
+          <h4>Explicación</h4>
+          <p><b>Past Simple</b>: pasado definido (yesterday, last year…). <br>
+             <b>Present Perfect</b>: experiencia/resultado, sin tiempo exacto (ever, never, just, already, yet, for/since).</p>
+        </article>
+        <article class="card">
+          <h4>Ejercicios (15)</h4>
+          <ol>
+            <li>I __(see)__ that movie three times.</li>
+            <li>She __(not/finish)__ her homework yet.</li>
+            <li>We __(go)__ to the park yesterday.</li>
+            <li>They __(live)__ in Madrid since 2019.</li>
+            <li>He __(visit)__ London last summer.</li>
+            <li>My parents __(just/arrive)__ home.</li>
+            <li>(MC) I … my best friend yesterday. a) have seen b) saw c) seen</li>
+            <li>(MC) She … never … sushi before. a) has/eaten b) ate c) have/eat</li>
+            <li>(MC) They … to the cinema last weekend. a) have gone b) went c) go</li>
+            <li>(MC) We … in this house for five years. a) lived b) have lived c) live</li>
+            <li>(Transf) you/ever/try/Chinese food? → …</li>
+            <li>(Transf) I/not/see/him yesterday → …</li>
+            <li>(Transf) she/study/English since 2020 → …</li>
+            <li>(Short) Have you ever been to another country?</li>
+            <li>(Short) What did you do last weekend?</li>
+          </ol>
+          <details><summary>Mini evaluación (5)</summary>
+            <ol>
+              <li>We __(be)__ in Rome last summer.</li>
+              <li>She __(already/finish)__ her project.</li>
+              <li>I __(not/see)__ him yesterday.</li>
+              <li>They __(just/leave)__ the house.</li>
+              <li>He __(work)__ here for 10 years.</li>
+            </ol>
+          </details>
+        </article>
+      </details>
+
+      <!-- Tema 4: Future forms -->
+      <details class="reveal fade-up">
+        <summary><h3>4) Future Forms (will / going to / present continuous)</h3></summary>
+        <article class="card">
+          <h4>Explicación</h4>
+          <p><b>Will</b>: decisión/promesa/predicción. <b>Going to</b>: plan/evidencia. <b>PC (futuro)</b>: plan organizado/cita.</p>
+        </article>
+        <article class="card">
+          <h4>Ejercicios (15) + mini prueba</h4>
+          <ol>
+            <li>Look at those clouds! It __(rain)__.</li>
+            <li>Don’t worry, I __(help)__ you.</li>
+            <li>They __(visit)__ their cousins next weekend (plan).</li>
+            <li>She __(study)__ medicine when she finishes school.</li>
+            <li>We __(have)__ lunch with my uncle tomorrow at 2 p.m.</li>
+            <li>He thinks Barcelona __(win)__ the match.</li>
+            <li>(MC) I promise I … call you later. a) am going to b) will c) am</li>
+            <li>(MC) They … travel to Italy (booked). a) are going to b) will c) are</li>
+            <li>(MC) She … probably be late. a) will b) is going to c) is</li>
+            <li>(MC) We … dinner tonight (calendar). a) have b) are having c) will have</li>
+            <li>(Transf) look!/she/fall → …</li>
+            <li>(Transf) I promise/I/study harder → …</li>
+            <li>(Transf) tomorrow/we/play/football at 6 → …</li>
+            <li>(Short) What are you going to do this weekend?</li>
+            <li>(Short) What are you doing tomorrow at 7 p.m.?</li>
+          </ol>
+          <details><summary>Mini evaluación (5)</summary>
+            <ol>
+              <li>I think it __(rain)__ tomorrow.</li>
+              <li>We __(visit)__ Paris next month (booked).</li>
+              <li>He __(not/be)__ at school tomorrow, he’s ill.</li>
+              <li>Don’t worry, I __(explain)__ everything.</li>
+              <li>She __(meet)__ her best friend tonight at 8.</li>
+            </ol>
+          </details>
+        </article>
+      </details>
+
+      <!-- Tema 5: Comparatives & Superlatives -->
+      <details class="reveal fade-up">
+        <summary><h3>5) Comparatives & Superlatives</h3></summary>
+        <article class="card">
+          <h4>Explicación</h4>
+          <p>Short: -er/-est; Long: more/most; Irregulares: good→better→best, bad→worse→worst, far→farther/further.</p>
+        </article>
+        <article class="card">
+          <h4>Ejercicios (15) + mini prueba</h4>
+          <ol>
+            <li>This book is __(interesting)__ than the one I read last week.</li>
+            <li>Today is the __(hot)__ day of the year.</li>
+            <li>My sister is __(young)__ than me.</li>
+            <li>That exam was __(difficult)__ than the last one.</li>
+            <li>Of all my friends, Peter is the __(funny)__.</li>
+            <li>English is becoming __(important)__ every year.</li>
+            <li>(MC) Everest is … mountain. a) the higher b) the highest c) higher</li>
+            <li>(MC) This hotel is … than the other one. a) more comfortable b) most comfortable c) comfortablest</li>
+            <li>(MC) She is … student. a) better b) the best c) bestest</li>
+            <li>(MC) My town is … than yours. a) bigger b) biggest c) the more big</li>
+            <li>(Transf) this exam/easy/the last one → …</li>
+            <li>(Transf) he/intelligent/person in the group → …</li>
+            <li>(Transf) my car/fast/yours → …</li>
+            <li>(Short) Compare your city with another city (2 frases).</li>
+            <li>(Short) Escribe 2 superlatives sobre tu familia.</li>
+          </ol>
+          <details><summary>Mini evaluación (5)</summary>
+            <ol>
+              <li>This restaurant is __(good)__ than the other one.</li>
+              <li>She is the __(tall)__ in her family.</li>
+              <li>My house is __(far)__ from the school than yours.</li>
+              <li>Today is the __(bad)__ day of the week.</li>
+              <li>John is __(friendly)__ than Mark.</li>
+            </ol>
+          </details>
+        </article>
+      </details>
+
+      <!-- Tema 6: Modals -->
+      <details class="reveal fade-up">
+        <summary><h3>6) Modals (can, could, must, should, might)</h3></summary>
+        <article class="card">
+          <h4>Explicación</h4>
+          <p>can (habilidad), could (pasado/posibilidad), must (obligación/certeza), should (consejo), might (posibilidad).</p>
+        </article>
+        <article class="card">
+          <h4>Ejercicios (15) + mini prueba</h4>
+          <ol>
+            <li>You __(should)__ see a doctor if you feel bad.</li>
+            <li>He __(can)__ speak three languages.</li>
+            <li>When I was a child, I __(could)__ play the piano.</li>
+            <li>They __(must)__ be very tired after that trip.</li>
+            <li>She __(might)__ come to the party.</li>
+            <li>You __(must not)__ park here.</li>
+            <li>(MC) You … study harder. a) must b) should c) might</li>
+            <li>(MC) He … be at home, the lights are off. a) must b) can’t c) should</li>
+            <li>(MC) … you help me? a) Must b) Could c) Should</li>
+            <li>(MC) She … play the guitar very well. a) can b) must c) might</li>
+            <li>(Transf) obligation/do/homework → You …</li>
+            <li>(Transf) possibility/rain/tomorrow → It …</li>
+            <li>(Transf) advice/eat/more fruit → You …</li>
+            <li>(Short) 2 cosas que puedes y 2 que no puedes hacer.</li>
+            <li>(Short) 2 consejos con <i>should</i>.</li>
+          </ol>
+          <details><summary>Mini evaluación (5)</summary>
+            <ol>
+              <li>You __(must)__ wear a helmet.</li>
+              <li>She __(could)__ dance very well when young.</li>
+              <li>I __(might)__ go to the cinema.</li>
+              <li>He __(can’t)__ be French.</li>
+              <li>You __(should)__ study daily.</li>
+            </ol>
+          </details>
+        </article>
+      </details>
+
+      <!-- Tema 7: First & Second Conditionals + repaso -->
+      <details class="reveal fade-up">
+        <summary><h3>7) First & Second Conditionals (+ Repaso)</h3></summary>
+        <article class="card">
+          <h4>Explicación</h4>
+          <p><b>First</b>: If + Present, will + inf (real futuro). <b>Second</b>: If + Past, would + inf (hipotético).</p>
+        </article>
+        <article class="card">
+          <h4>Ejercicios (15)</h4>
+          <ol>
+            <li>If it __(rain)__, we __(stay)__ at home.</li>
+            <li>If she __(study)__, she __(pass)__ the exam.</li>
+            <li>If I __(be)__ you, I __(talk)__ to him.</li>
+            <li>They __(help)__ us if we __(ask)__.</li>
+            <li>If I __(have)__ more money, I __(buy)__ a car.</li>
+            <li>If he __(not/come)__, we __(start)__ without him.</li>
+            <li>(MC) If we … now, we … catch the bus. a) leave/will b) left/would c) leaving/will</li>
+            <li>(MC) She … happier if she … more friends. a) is/will have b) will be/has c) would be/had</li>
+            <li>(MC) If it rains tomorrow, we … at home. a) stay b) will stay c) would stay</li>
+            <li>(MC) If I … a car, I … drive to work. a) have/will b) had/would c) had/will</li>
+            <li>(Transf) If/study/pass exam (First) → …</li>
+            <li>(Transf) If/be rich/travel a lot (Second) → …</li>
+            <li>(Transf) If/rain tomorrow/stay home (First) → …</li>
+            <li>(Short) 2 frases First.</li>
+            <li>(Short) 2 frases Second.</li>
+          </ol>
+          <details><summary>Mini evaluación (5)</summary>
+            <ol>
+              <li>If you __(work)__ hard, you __(get)__ results.</li>
+              <li>If I __(know)__ the answer, I __(tell)__ you.</li>
+              <li>If we __(not/hurry)__, we __(miss)__ the train.</li>
+              <li>She __(help)__ you if she __(can)__.</li>
+              <li>If I __(be)__ taller, I __(play)__ basketball.</li>
+            </ol>
+          </details>
+          <details><summary>Repaso extra (10)</summary>
+            <ol>
+              <li>If we __(not/hurry)__, we __(miss)__ the bus.</li>
+              <li>If I __(be)__ rich, I __(buy)__ a big house.</li>
+              <li>She __(help)__ you if you __(ask)__ her.</li>
+              <li>If they __(study)__, they __(pass)__ the test.</li>
+              <li>If I __(have)__ wings, I __(fly)__ to school.</li>
+              <li>If it __(rain)__ tomorrow, we __(stay)__ inside.</li>
+              <li>If I __(be)__ you, I __(not/worry)__.</li>
+              <li>He __(not/come)__ if you __(not/invite)__ him.</li>
+              <li>If we __(see)__ him, we __(tell)__ him the news.</li>
+              <li>If I __(win)__ the lottery, I __(travel)__ the world.</li>
+            </ol>
+          </details>
+        </article>
+      </details>
     </div>
   </section>
 
-  <section class="section alt">
+  <!-- ============ VOCABULARIO ============ -->
+  <section id="vocab" class="section alt">
     <div class="container">
       <h2>🗣️ Vocabulario</h2>
-      <p>Listas de vocabulario por temas: viajes, trabajo, salud, etc.</p>
+
+      <!-- Travel & Holidays -->
+      <details open class="reveal fade-up">
+        <summary><h3>1) Travel & Holidays</h3></summary>
+        <article class="card">
+          <h4>Lista clave</h4>
+          <p>airport, boarding pass, suitcase, passport, flight, ticket, customs, journey, trip, holiday, travel, book, check in, take off, land, guided tour, reservation, luggage…</p>
+        </article>
+        <article class="card">
+          <h4>Ejercicios (15) + mini prueba</h4>
+          <ol>
+            <li>(Match) boarding pass / luggage / flight / sightseeing / reservation ↔ definiciones</li>
+            <li>Don’t forget your __(passport)__ …</li>
+            <li>We made a hotel __(reservation)__ …</li>
+            <li>The plane will __(take off)__ …</li>
+            <li>I bought a return __(ticket)__ …</li>
+            <li>They went on a guided __(tour)__ …</li>
+            <li>(MC) We missed our … a) trip b) flight c) holiday</li>
+            <li>(MC) Have you … your luggage yet? a) checked in b) booked c) taken off</li>
+            <li>(MC) The plane … at 9 p.m. a) landed b) lands c) both</li>
+            <li>(Short) 3 cosas que llevas al viajar.</li>
+            <li>(Short) 2 frases con “go sightseeing” y “boarding pass”.</li>
+          </ol>
+          <details><summary>Mini prueba (5)</summary>
+            <ol>
+              <li>You need a __(boarding pass)__ …</li>
+              <li>We __(booked)__ a hotel …</li>
+              <li>The plane __(landed)__ …</li>
+              <li>He forgot his __(passport)__ …</li>
+              <li>We went __(sightseeing)__ …</li>
+            </ol>
+          </details>
+        </article>
+      </details>
+
+      <!-- Work & Studies -->
+      <details class="reveal fade-up">
+        <summary><h3>2) Work & Studies</h3></summary>
+        <article class="card">
+          <h4>Lista clave</h4>
+          <p>work, job, career, colleague, manager, boss, interview, salary, wages, school, subject, exam, grade, course, degree, apply for, pass/fail, full-time, part-time…</p>
+        </article>
+        <article class="card">
+          <h4>Ejercicios (15) + mini prueba</h4>
+          <ol>
+            <li>(Match) colleague / salary / interview / exam / degree ↔ definiciones</li>
+            <li>I have a job __(interview)__ tomorrow.</li>
+            <li>He works full-time and gets a __(salary)__.</li>
+            <li>We are __(studying for)__ our English exam.</li>
+            <li>She wants to __(apply for)__ a new job.</li>
+            <li>He __(failed)__ the driving test …</li>
+            <li>(MC) My … is kind. a) colleague b) salary c) interview</li>
+            <li>(MC) She got her … in law. a) job b) degree c) wages</li>
+            <li>(MC) He … the exam. a) passed b) failed c) finished</li>
+            <li>(Short) 3 palabras de school.</li>
+            <li>(Short) 2 frases con boss y graduate.</li>
+          </ol>
+          <details><summary>Mini prueba (5)</summary>
+            <ol>
+              <li>She has a good __(job)__ …</li>
+              <li>My __(colleague)__ is very friendly.</li>
+              <li>He __(passed)__ the maths exam.</li>
+              <li>We had a difficult __(interview)__ yesterday.</li>
+              <li>His __(boss)__ is very strict.</li>
+            </ol>
+          </details>
+        </article>
+      </details>
+
+      <!-- Health & Lifestyle -->
+      <details class="reveal fade-up">
+        <summary><h3>3) Health & Lifestyle</h3></summary>
+        <article class="card">
+          <h4>Lista clave</h4>
+          <p>doctor, nurse, patient, hospital, appointment, prescription, medicine, exercise, diet, stress, illness, flu, fever, recover, treat, get better…</p>
+        </article>
+        <article class="card">
+          <h4>Ejercicios (15) + mini prueba</h4>
+          <ol>
+            <li>(Match) prescription / appointment / nurse / flu / exercise ↔ definiciones</li>
+            <li>The doctor gave me a __(prescription)__ …</li>
+            <li>She has a dentist __(appointment)__ …</li>
+            <li>I think I’ve got the __(flu)__.</li>
+            <li>Doing regular __(exercise)__ is important.</li>
+            <li>He broke his leg → __(hospital)__.</li>
+            <li>(MC) You should … a) eat junk b) do exercise c) sleep less</li>
+            <li>(MC) The nurse gave me … a) pills b) prescriptions c) treatments</li>
+            <li>(MC) He had a high … a) stress b) fever c) diet</li>
+            <li>(Short) 3 cosas para estar sano.</li>
+            <li>(Short) 2 frases con pain y doctor.</li>
+          </ol>
+          <details><summary>Mini prueba (5)</summary>
+            <ol>
+              <li>He has a terrible __(headache)__.</li>
+              <li>The doctor told me to stay in __(bed)__.</li>
+              <li>She is a __(nurse)__ in the hospital.</li>
+              <li>I need a special __(diet)__.</li>
+              <li>I hope you __(get better)__ soon!</li>
+            </ol>
+          </details>
+        </article>
+      </details>
+
+      <!-- Technology & Communication -->
+      <details class="reveal fade-up">
+        <summary><h3>4) Technology & Communication</h3></summary>
+        <article class="card">
+          <h4>Lista clave</h4>
+          <p>computer, laptop, smartphone, app, software, file, folder, password, internet, website, email, social media, download, upload, log in/out, save, share, post…</p>
+        </article>
+        <article class="card">
+          <h4>Ejercicios (15) + mini prueba</h4>
+          <ol>
+            <li>(Match) password / app / headphones / website / Wi-Fi ↔ definiciones</li>
+            <li>I forgot my __(password)__.</li>
+            <li>She downloaded a new __(app)__.</li>
+            <li>He uses __(headphones)__ …</li>
+            <li>I found an interesting __(website)__ …</li>
+            <li>The __(Wi-Fi)__ is down.</li>
+            <li>(MC) You should … your files. a) delete b) save c) lose</li>
+            <li>(MC) Can you … this photo? a) post b) receive c) download</li>
+            <li>(MC) He … a video yesterday. a) uploaded b) downloaded c) logged in</li>
+            <li>(Short) 3 cosas con smartphone.</li>
+            <li>(Short) 2 frases con social media y charger.</li>
+          </ol>
+          <details><summary>Mini prueba (5)</summary>
+            <ol>
+              <li>I need a phone __(charger)__.</li>
+              <li>She __(sent)__ me a message.</li>
+              <li>Do you use __(social media)__ every day?</li>
+              <li>He __(uploaded)__ a photo.</li>
+              <li>Please __(log out)__ when you finish.</li>
+            </ol>
+          </details>
+        </article>
+      </details>
+
+      <!-- Daily Life & Free Time -->
+      <details class="reveal fade-up">
+        <summary><h3>5) Daily Life & Free Time</h3></summary>
+        <article class="card">
+          <h4>Lista clave</h4>
+          <p>daily routines, chores (make the bed, do the laundry, take out the rubbish), free time (hang out, go to the cinema, play sports)…</p>
+        </article>
+        <article class="card">
+          <h4>Ejercicios (15) + mini prueba</h4>
+          <ol>
+            <li>(Match) laundry / hang out / chores / wake up / cinema ↔ definiciones</li>
+            <li>I usually __(wake up)__ at 7 a.m.</li>
+            <li>She is __(doing)__ her homework now.</li>
+            <li>We often __(hang out)__ in the park.</li>
+            <li>He __(takes out)__ the rubbish …</li>
+            <li>They went to the __(cinema)__ last Saturday.</li>
+            <li>(MC) My mother … the bed. a) makes b) does c) cleans</li>
+            <li>(MC) We … our grandparents. a) meet b) visit c) go</li>
+            <li>(MC) He … football twice a week. a) plays b) is playing c) play</li>
+            <li>(Short) 3 chores que haces.</li>
+            <li>(Short) 2 frases de free time.</li>
+          </ol>
+          <details><summary>Mini prueba (5)</summary>
+            <ol>
+              <li>I always __(brush)__ my teeth …</li>
+              <li>She __(does)__ the laundry on Sundays.</li>
+              <li>We like to __(spend)__ time with friends.</li>
+              <li>He usually __(plays)__ video games.</li>
+              <li>They __(went)__ shopping yesterday.</li>
+            </ol>
+          </details>
+        </article>
+      </details>
+
+      <!-- Environment & Nature -->
+      <details class="reveal fade-up">
+        <summary><h3>6) Environment & Nature</h3></summary>
+        <article class="card">
+          <h4>Lista clave</h4>
+          <p>forest, river, desert, storm, climate change, pollution, recycling, renewable energy, protect, reduce, reuse, plant…</p>
+        </article>
+        <article class="card">
+          <h4>Ejercicios (15) + mini prueba</h4>
+          <ol>
+            <li>(Match) pollution / recycling / endangered species / desert / storm ↔ definiciones</li>
+            <li>We must __(recycle)__ paper, glass, plastic.</li>
+            <li>There is too much __(pollution)__.</li>
+            <li>Polar bears are __(endangered species)__.</li>
+            <li>The Sahara is a __(desert)__.</li>
+            <li>A __(storm)__ destroyed many houses.</li>
+            <li>(MC) We should … energy. a) save b) waste c) cut down</li>
+            <li>(MC) The Amazon is being … a) planted b) cut down c) recycled</li>
+            <li>(MC) Solar and wind are … energy. a) natural b) renewable c) polluted</li>
+            <li>(Short) 3 acciones para proteger el ambiente.</li>
+            <li>(Short) 2 frases con recycle y pollution.</li>
+          </ol>
+          <details><summary>Mini prueba (5)</summary>
+            <ol>
+              <li>Don’t __(throw away)__ plastic bottles…</li>
+              <li>The __(forest)__ is full of animals.</li>
+              <li>Climate __(change)__ is a big problem.</li>
+              <li>We must __(protect)__ endangered species.</li>
+              <li>It was very __(windy)__ yesterday.</li>
+            </ol>
+          </details>
+        </article>
+      </details>
     </div>
   </section>
 
+  <!-- ============ READING ============ -->
+  <section id="reading" class="section">
+    <div class="container">
+      <h2>📖 Reading (5 textos)</h2>
+
+      <!-- Reading 1 -->
+      <details open class="reveal fade-up">
+        <summary><h3>Reading 1 – A Travel Blog (Italy)</h3></summary>
+        <article class="card">
+          <details><summary>Mostrar texto</summary>
+            <p>Last summer, I visited Italy with two friends. We spent two weeks traveling around Rome, Florence, and Venice...
+            We stayed in small hotels and used trains. In Venice we got lost but found a small restaurant with delicious pasta…</p>
+          </details>
+          <h4>Preguntas (10)</h4>
+          <ol>
+            <li>How many friends went to Italy? …</li><li>Which cities did they visit? …</li><li>What did they see in Rome? …</li>
+            <li>How was Florence described? …</li><li>Transport between cities? …</li><li>What happened in Venice? …</li>
+            <li>What did they find? …</li><li>How was the food? …</li><li>How long did they stay? …</li><li>Do they want to return? …</li>
+          </ol>
+          <details><summary>Mini test (5)</summary>
+            <ol>
+              <li>They spent … a) 1 week b) 2 weeks c) 3 weeks</li>
+              <li>In Rome: a) Colosseum & Vatican b) Pisa c) Eiffel Tower</li>
+              <li>Venice was: a) noisy b) romantic c) modern</li>
+              <li>They travelled by: a) plane b) car c) train</li>
+              <li>They ate: a) pizza b) pasta c) salad</li>
+            </ol>
+          </details>
+        </article>
+      </details>
+
+      <!-- Reading 2 -->
+      <details class="reveal fade-up">
+        <summary><h3>Reading 2 – A Busy Student</h3></summary>
+        <article class="card">
+          <details><summary>Mostrar texto</summary>
+            <p>My name is Laura and I’m studying engineering at university… classes 9–3, library after classes, part-time job in a café three times a week…</p>
+          </details>
+          <h4>Preguntas (10)</h4>
+          <ol>
+            <li>What is Laura studying? …</li><li>When does she finish? …</li><li>Where does she study after classes? …</li>
+            <li>What job? …</li><li>How many times a week? …</li><li>Is it easy? …</li>
+            <li>What is she learning? …</li><li>Weekends? …</li><li>With whom? …</li><li>What does she believe? …</li>
+          </ol>
+          <details><summary>Mini test (5)</summary>
+            <ol>
+              <li>Studying: a) medicine b) engineering c) history</li>
+              <li>Finishes at: a) 3 b) 5 c) 6</li>
+              <li>Job in a: a) library b) café c) restaurant</li>
+              <li>Works: a) two b) three c) four</li>
+              <li>Weekends: a) study b) relax & meet friends c) sleep</li>
+            </ol>
+          </details>
+        </article>
+      </details>
+
+      <!-- Reading 3 -->
+      <details class="reveal fade-up">
+        <summary><h3>Reading 3 – A Healthy Lifestyle</h3></summary>
+        <article class="card">
+          <details><summary>Mostrar texto</summary>
+            <p>Tom changed his lifestyle: healthy meals with vegetables/fish, gym three times a week, 10,000 steps daily… feels stronger now…</p>
+          </details>
+          <h4>Preguntas (10)</h4>
+          <ol>
+            <li>How old is Tom? …</li><li>What food did he stop? …</li><li>Meals now? …</li><li>Gym frequency? …</li><li>Daily steps? …</li>
+            <li>How does he feel? …</li><li>Was it easy? …</li><li>Now he enjoys it? …</li><li>What changed? …</li><li>Future? …</li>
+          </ol>
+          <details><summary>Mini test (5)</summary>
+            <ol>
+              <li>Age: a)20 b)25 c)30</li><li>Cooks with: a) meat/pasta b) veg/fish c) rice/bread</li>
+              <li>Gym: a) once b) twice c) three times</li><li>Steps: a)1k b)5k c)10k</li><li>Feels: a) tired b) strong & energetic c) bored</li>
+            </ol>
+          </details>
+        </article>
+      </details>
+
+      <!-- Reading 4 -->
+      <details class="reveal fade-up">
+        <summary><h3>Reading 4 – A Day at the Office</h3></summary>
+        <article class="card">
+          <details><summary>Mostrar texto</summary>
+            <p>Mark works in an international company: emails, reports, meetings; starts 8:30, finishes 5; lunch with colleagues; sometimes late for deadlines; likes multicultural team; hopes promotion…</p>
+          </details>
+          <h4>Preguntas (10)</h4>
+          <ol>
+            <li>Where does he work? …</li><li>Main tasks? …</li><li>Start time? …</li><li>Finish time? …</li><li>Lunch place? …</li>
+            <li>When late? …</li><li>Stressful? …</li><li>Why likes job? …</li><li>Works with whom? …</li><li>Hope? …</li>
+          </ol>
+          <details><summary>Mini test (5)</summary>
+            <ol>
+              <li>Place: a) school b) company c) hospital</li><li>Start: a)7:30 b)8:30 c)9:30</li>
+              <li>Lunch with: a) clients b) colleagues c) family</li>
+              <li>Late when: a) holiday b) deadline c) problem</li>
+              <li>Hopes for: a) new job b) promotion c) holiday</li>
+            </ol>
+          </details>
+        </article>
+      </details>
+
+      <!-- Reading 5 -->
+      <details class="reveal fade-up">
+        <summary><h3>Reading 5 – Protecting the Environment</h3></summary>
+        <article class="card">
+          <details><summary>Mostrar texto</summary>
+            <p>Schools organize projects: recycling, reducing waste, saving energy; collect plastic/paper; promote bicycles; plant trees; small actions make big difference…</p>
+          </details>
+          <h4>Preguntas (10)</h4>
+          <ol>
+            <li>Who is becoming interested? …</li><li>What do schools organize? …</li><li>Teach about? …</li><li>Materials collected? …</li><li>Transport encouraged? …</li>
+            <li>What did students plant? …</li><li>Where? …</li><li>Do small actions help? …</li><li>What kind of difference? …</li><li>Main idea? …</li>
+          </ol>
+          <details><summary>Mini test (5)</summary>
+            <ol>
+              <li>Schools organize: a) parties b) projects c) games</li>
+              <li>Collect: a) glass/wood b) plastic/paper c) clothes/shoes</li>
+              <li>Encourage: a) buses b) bicycles c) planes</li>
+              <li>Planted: a) flowers b) trees c) vegetables</li>
+              <li>Actions are: a) small but important b) big/expensive c) unnecessary</li>
+            </ol>
+          </details>
+        </article>
+      </details>
+    </div>
+  </section>
+
+  <!-- ============ WRITING ============ -->
+  <section id="writing" class="section alt">
+    <div class="container">
+      <h2>✍️ Writing</h2>
+
+      <!-- Writing 1: Informal Email -->
+      <details open class="reveal fade-up">
+        <summary><h3>1) Informal Email</h3></summary>
+        <article class="card">
+          <h4>Modelo</h4>
+          <p><i>Hi Anna, Thanks for your email… We watched a funny film… Next week hiking… Do you want to come? Best, Laura</i></p>
+        </article>
+        <article class="card">
+          <h4>Ejercicios (5)</h4>
+          <ol>
+            <li>Email a un amigo: ¿qué hiciste el fin de semana?</li>
+            <li>Email invitando a un amigo a salir.</li>
+            <li>Corrige: “Hi Peter. I go cinema yesterday…”</li>
+            <li>Completa conectores: “We had lunch … we visited … then …”</li>
+            <li>Frase de despedida adecuada.</li>
+          </ol>
+        </article>
+      </details>
+
+      <!-- Writing 2: Formal Email -->
+      <details class="reveal fade-up">
+        <summary><h3>2) Formal Email</h3></summary>
+        <article class="card">
+          <h4>Modelo</h4>
+          <p><i>Dear Sir/Madam, I am writing to ask for more information about… Yours faithfully, …</i></p>
+        </article>
+        <article class="card">
+          <h4>Ejercicios (5)</h4>
+          <ol>
+            <li>Email pidiendo info de un hotel.</li>
+            <li>“I am writing to ____ about the job ad.”</li>
+            <li>Despedida formal.</li>
+            <li>Reescribe formal: “Can you tell me the price?”</li>
+            <li>Pedir horario de un curso.</li>
+          </ol>
+        </article>
+      </details>
+
+      <!-- Writing 3: Short Story -->
+      <details class="reveal fade-up">
+        <summary><h3>3) Short Story</h3></summary>
+        <article class="card">
+          <h4>Modelo</h4>
+          <p><i>It was a cold evening… suddenly I heard a strange noise… finally, it was only the cat!</i></p>
+        </article>
+        <article class="card">
+          <h4>Ejercicios (5)</h4>
+          <ol>
+            <li>Historia que empiece con: “Last summer I travelled to …”</li>
+            <li>Completa: “I was walking in the park when …”</li>
+            <li>5 conectores de tiempo.</li>
+            <li>3 adjetivos para historia divertida.</li>
+            <li>Corrige: “I go to the park and I see a dog.”</li>
+          </ol>
+        </article>
+      </details>
+
+      <!-- Writing 4: Opinion Essay -->
+      <details class="reveal fade-up">
+        <summary><h3>4) Opinion Essay</h3></summary>
+        <article class="card">
+          <h4>Modelo</h4>
+          <p><i>In my opinion, learning English is very important… Firstly… Secondly… Finally… In conclusion…</i></p>
+        </article>
+        <article class="card">
+          <h4>Ejercicios (5)</h4>
+          <ol>
+            <li>Opinión: “Aprender idiomas en la escuela”.</li>
+            <li>Completa: “Firstly…, Secondly…, Finally…”</li>
+            <li>Frase introductoria.</li>
+            <li>Corrige: “I think is important study.”</li>
+            <li>Frase de conclusión.</li>
+          </ol>
+        </article>
+      </details>
+
+      <!-- Writing 5: Descriptions -->
+      <details class="reveal fade-up">
+        <summary><h3>5) Descriptions (People / Places)</h3></summary>
+        <article class="card">
+          <h4>Modelo</h4>
+          <p><i>My best friend is tall… We visited Barcelona… the city is beautiful…</i></p>
+        </article>
+        <article class="card">
+          <h4>Ejercicios (5)</h4>
+          <ol>
+            <li>Describe a tu mejor amigo (4 frases).</li>
+            <li>3 adjetivos para describir una ciudad.</li>
+            <li>Completa: “The place is … and …”</li>
+            <li>Frase con <i>although</i>.</li>
+            <li>Corrige: “She have blue eyes.”</li>
+          </ol>
+        </article>
+
+        <details><summary>Mini prueba Writing (elige 1 tarea, 80–100 palabras)</summary>
+          <ol>
+            <li>Email informal: planes del fin de semana.</li>
+            <li>Historia: “It was a sunny day when …”</li>
+            <li>Opinión: importancia de Internet en la vida.</li>
+          </ol>
+        </details>
+      </details>
+    </div>
+  </section>
+
+  <!-- Footer -->
   <footer class="site-footer">
-    <div class="container">© 2025 MiSitio</div>
+    <div class="container footer__inner">
+      <p>© 2025 MiSitio. Hecho con ♥ y buenas prácticas.</p>
+      <a href="#top" class="btn btn--sm btn--ghost">Ir arriba</a>
+    </div>
   </footer>
+
+  <!-- Botón flotante -->
+  <a href="#top" class="to-top" aria-label="Volver arriba">↑</a>
 </body>
 </html>
+
