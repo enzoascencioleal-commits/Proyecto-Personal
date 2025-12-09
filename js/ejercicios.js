@@ -1,26 +1,35 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const checkBtn = document.getElementById("checkBtn");
+document.addEventListener("DOMContentLoaded", function () {
+  var checkBtn = document.getElementById("checkBtn");
   if (!checkBtn) return;
 
-  checkBtn.addEventListener("click", () => {
-    const exercises = document.querySelectorAll("[data-exercise]");
-    let correct = 0;
+  checkBtn.addEventListener("click", function () {
+    var exercises = document.querySelectorAll("[data-exercise]");
+    var correct = 0;
+    var total = exercises.length;
 
-    exercises.forEach(ex => {
-      const input = ex.querySelector("input");
-      const answer = input.dataset.answer.trim().toLowerCase();
-      const user = input.value.trim().toLowerCase();
+    exercises.forEach(function (ex) {
+      var input = ex.querySelector("input");
+      if (!input) return;
 
-      if (user === answer) {
-        input.style.borderColor = "green";
+      var rawAnswer = input.getAttribute("data-answer") || "";
+      var answers = rawAnswer
+        .split(",")
+        .map(function (a) { return a.trim().toLowerCase(); })
+        .filter(function (a) { return a.length > 0; });
+
+      var user = (input.value || "").trim().toLowerCase();
+
+      if (answers.indexOf(user) !== -1) {
+        input.style.borderColor = "var(--accent, green)";
         correct++;
       } else {
-        input.style.borderColor = "red";
+        input.style.borderColor = "crimson";
       }
     });
 
-    const result = document.getElementById("resultMessage");
-    result.textContent = `Score: ${correct} / ${exercises.length}`;
+    var result = document.getElementById("resultMessage");
+    if (result) {
+      result.textContent = "Respuestas correctas: " + correct + " de " + total + ".";
+    }
   });
 });
-
