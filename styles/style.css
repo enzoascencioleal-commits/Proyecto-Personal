@@ -166,12 +166,12 @@ a:hover {
 
 .hero__content {
   padding: 120px 0 90px;
-  text-align: center;
+  text-align: left;
 }
 
 .hero h1 {
   font-size: clamp(2.6rem, 4vw, 3.4rem);
-  letter-spacing: 0.12em;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
   margin: 0 0 1.2rem;
 }
@@ -182,7 +182,6 @@ a:hover {
 
 .hero p {
   max-width: 620px;
-  margin: 0 auto;
   font-size: 1.02rem;
   color: var(--text-muted);
 }
@@ -238,11 +237,10 @@ p {
 .btn--primary {
   border-color: var(--blue-accent);
   color: #e5edf9;
-  background: radial-gradient(circle at 0% 0%, #3b82f6, #1d4ed8);
 }
 
 .btn--primary:hover {
-  background: radial-gradient(circle at 100% 0%, #60a5fa, #1e40af);
+  background: var(--blue-accent);
   transform: translateY(-1px);
 }
 
@@ -296,7 +294,7 @@ p {
   background: #0b1324;
 }
 
-/* BLOQUES GLASS */
+/* BLOQUES "GLASS" (si los usas) */
 
 .glass {
   background: #070e1d;
@@ -333,7 +331,7 @@ ul {
   color: var(--blue-soft);
 }
 
-/* FORMULARIOS */
+/* FORMULARIOS / RESEÑAS */
 
 .form {
   display: flex;
@@ -376,26 +374,6 @@ textarea:focus {
 textarea {
   resize: vertical;
   min-height: 110px;
-}
-
-/* RADIO / SELECT EXTRA (por si usas) */
-
-select {
-  width: 100%;
-  padding: 0.55rem 0.75rem;
-  border-radius: var(--radius-md);
-  border: 1px solid rgba(148, 163, 184, 0.35);
-  background: #050712;
-  color: var(--text-main);
-  font-family: inherit;
-  font-size: 0.9rem;
-  outline: none;
-  transition: border-color var(--transition), background var(--transition);
-}
-
-select:focus {
-  border-color: var(--blue-soft);
-  background: #060b18;
 }
 
 .radio-group {
@@ -532,9 +510,5 @@ select:focus {
   .footer__inner {
     flex-direction: column;
     align-items: flex-start;
-  }
-
-  .hero {
-    text-align: center;
   }
 }
