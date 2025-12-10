@@ -4,165 +4,169 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#0e1015" />
-  <title>Idiomas Fáciles – Inicio</title>
+  <title>Mi Web Elegante</title>
 
+  <!-- Fuente elegante -->
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="styles/style.css" />
 </head>
 <body>
-  <header class="site-header" id="top">
-    <a class="brand" href="index.html" aria-label="Ir al inicio">✨ Idiomas Fáciles</a>
 
-    <nav id="site-nav" class="site-nav" aria-label="Navegación principal">
+  <!-- Header / Nav -->
+  <header class="site-header" id="top">
+    <a class="brand" href="index.html" aria-label="Ir al inicio">✨ MiSitio</a>
+    <nav class="site-nav" aria-label="Navegación principal">
       <a href="#hero" class="nav-link">Inicio</a>
-      <a href="#project" class="nav-link">Proyecto</a>
-      <a href="Ingles/ingles.html" class="nav-link">Inglés B1</a>
-      <a href="Aleman/aleman.html" class="nav-link">Alemán A2–B1</a>
+      <a href="#about" class="nav-link">Sobre mí</a>
+      <a href="ingles/ingles.html" class="nav-link">Inglés B1</a>
+      <a href="aleman/aleman.html" class="nav-link">Alemán B1</a>
       <a href="#features" class="nav-link">Características</a>
       <a href="#reviews" class="nav-link">Reseñas</a>
     </nav>
   </header>
 
+  <!-- Hero -->
   <section id="hero" class="section hero">
     <div class="hero__bg" aria-hidden="true"></div>
     <div class="container hero__content">
-      <h1 class="reveal fade-up">
-        Idiomas Fáciles
+      <h1 class="reveal fade-up delay-1">
+        Aprende <span class="gradient">Idiomas Fácil</span> con un método claro y organizado
       </h1>
-      <p class="muted reveal fade-up delay-1">
-        Plataforma educativa para practicar inglés y alemán con unidades claras, explicaciones sencillas y ejercicios interactivos.
+      <p class="muted reveal fade-up delay-2">
+        Proyecto educativo creado para apoyar a estudiantes, profesores y familias.
       </p>
-      <div class="reveal fade-up delay-2">
-        <a href="Ingles/ingles.html" class="btn btn--primary">Ir a Inglés</a>
-        <a href="Aleman/aleman.html" class="btn btn--ghost">Ir a Alemán</a>
+      <div class="reveal fade-up delay-3">
+        <a href="#about" class="btn btn--primary">Conocer más</a>
       </div>
     </div>
   </section>
 
-  <section id="project" class="section">
+  <!-- Sobre mi -->
+  <section id="about" class="section">
     <div class="container grid-2">
-      <div>
+      <div class="reveal slide-right">
         <h2>Sobre el proyecto</h2>
         <p>
-          “Idiomas Fáciles” es un proyecto personal que combina dos intereses:
-          el aprendizaje de idiomas y la programación. El objetivo es crear un
-          espacio digital donde estudiantes de nivel A2–B1 puedan practicar
-          inglés y alemán de forma organizada, autónoma y visualmente clara.
+          Este proyecto busca facilitar el aprendizaje de idiomas mediante unidades claras,
+          ejercicios interactivos y explicaciones accesibles para todos los niveles.
         </p>
 
-        <h3>Objetivo de aprendizaje</h3>
+        <h3>Objetivos de aprendizaje</h3>
+        <ul class="ticks">
+          <li>Desarrollar comprensión gramatical en inglés y alemán.</li>
+          <li>Promover el estudio autónomo con retroalimentación inmediata.</li>
+          <li>Organizar contenido educativo de forma moderna y eficiente.</li>
+        </ul>
+
+        <h3>Meta del producto</h3>
         <p>
-          Desarrollar una plataforma digital que organice contenidos lingüísticos
-          de manera clara, estructurada y accesible, permitiendo a los estudiantes
-          practicar inglés y alemán mediante explicaciones, actividades interactivas
-          y material complementario adaptado a los niveles A2–B1.
+          Construir una plataforma digital educativa elegante, funcional y accesible,
+          ideal para estudiantes y profesores.
         </p>
+
+        <h3>Atributos IB destacados</h3>
+        <ul class="ticks">
+          <li>Indagadores</li>
+          <li>Equilibrados</li>
+          <li>Buenos comunicadores</li>
+          <li>Pensadores críticos</li>
+        </ul>
       </div>
 
-      <div>
-        <h3>Meta del producto</h3>
-        <ul class="ticks">
-          <li>Secciones independientes por idioma.</li>
-          <li>Unidades de estudio con explicaciones conceptuales.</li>
-          <li>Ejercicios autocorregibles que refuercen la comprensión.</li>
-          <li>Una interfaz ordenada y amigable para un aprendizaje progresivo.</li>
-        </ul>
-
-        <h3>Habilidades clave utilizadas</h3>
-        <ul class="ticks">
-          <li>Comunicación: redacción clara de explicaciones gramaticales y vocabulario.</li>
-          <li>Pensamiento crítico: selección de contenidos pertinentes y diseño de ejercicios.</li>
-          <li>Gestión del tiempo: planificación de las unidades y del diseño del sitio.</li>
-          <li>Herramientas digitales: uso de HTML, CSS y JavaScript para construir la plataforma.</li>
-        </ul>
+      <div class="reveal zoom-in">
+        <div class="glass card-media">
+          <!-- Decoración -->
+          <svg width="100%" height="100%" viewBox="0 0 300 200" aria-hidden="true">
+            <defs>
+              <linearGradient id="g1" x1="0" x2="1">
+                <stop offset="0%" stop-color="#6EE7F9" />
+                <stop offset="100%" stop-color="#A78BFA" />
+              </linearGradient>
+              <filter id="blur" x="-10%" y="-10%" width="120%" height="120%">
+                <feGaussianBlur stdDeviation="12" />
+              </filter>
+            </defs>
+            <circle cx="70" cy="60" r="50" fill="url(#g1)" filter="url(#blur)"/>
+            <rect x="120" y="30" width="160" height="120" rx="18" fill="url(#g1)" opacity="0.5"/>
+            <circle cx="220" cy="140" r="40" fill="url(#g1)" />
+          </svg>
+        </div>
       </div>
     </div>
   </section>
 
+  <!-- Características -->
   <section id="features" class="section alt">
     <div class="container">
-      <h2 class="center">Características del sitio</h2>
-      <p class="center muted">
-        Un diseño pensado para que estudiar idiomas sea más simple y organizado.
+      <h2 class="center reveal fade-up">Características</h2>
+      <p class="center muted reveal fade-up delay-1">
+        Contenido organizado, diseño claro y ejercicios con retroalimentación automática.
       </p>
 
       <div class="cards">
-        <article class="card">
-          <h3>Contenido estructurado</h3>
-          <p>Unidades separadas por tema y nivel, para avanzar paso a paso.</p>
+        <article class="card reveal fade-up">
+          <h3>Aprendizaje estructurado</h3>
+          <p>Unidades ordenadas con explicaciones, ejemplos y práctica.</p>
         </article>
 
-        <article class="card">
-          <h3>Ejercicios interactivos</h3>
-          <p>Actividades con autocorrección para que el estudiante reciba retroalimentación inmediata.</p>
+        <article class="card reveal fade-up delay-1">
+          <h3>Retroalimentación inmediata</h3>
+          <p>Ejercicios interactivos que corrigen tus respuestas al instante.</p>
         </article>
 
-        <article class="card">
-          <h3>Diseño claro</h3>
-          <p>Interfaz limpia, texto legible y navegación sencilla entre idiomas y unidades.</p>
+        <article class="card reveal fade-up delay-2">
+          <h3>Diseño elegante</h3>
+          <p>Interfaz clara, moderna y amigable para el estudio.</p>
         </article>
       </div>
     </div>
   </section>
 
+  <!-- Reseñas públicas -->
   <section id="reviews" class="section">
     <div class="container">
-      <h2>Reseña del sitio</h2>
-      <p class="muted">
-        Comparte una breve reseña sobre la página y cómo crees que puede ayudar a aprender idiomas.
-      </p>
+      <h2>Reseñas</h2>
+      <p class="muted">Comparte tu opinión sobre el proyecto.</p>
 
-      <form class="form glass" autocomplete="off">
+      <form class="form glass">
         <label>
-          <span>Tu nombre (opcional)</span>
-          <input type="text" name="nombre" placeholder="Escribe tu nombre" />
+          <span>Tu nombre</span>
+          <input type="text" name="name" placeholder="Nombre..." required>
         </label>
 
-        <fieldset class="form-group">
-          <legend>¿Quién eres?</legend>
-          <div class="radio-group">
-            <label>
-              <input type="radio" name="rol" value="profesor" />
-              Profesor
-            </label>
-            <label>
-              <input type="radio" name="rol" value="alumno" />
-              Alumno
-            </label>
-            <label>
-              <input type="radio" name="rol" value="apoderado" />
-              Apoderado
-            </label>
-            <label>
-              <input type="radio" name="rol" value="otro" />
-              Otro
-            </label>
-          </div>
-        </fieldset>
-
         <label>
-          <span>Tu reseña</span>
-          <textarea name="mensaje" rows="4" placeholder="Escribe aquí tu opinión sobre la página..."></textarea>
+          <span>Rol</span>
+          <select name="rol" required>
+            <option value="">Selecciona...</option>
+            <option>Profesor</option>
+            <option>Alumno</option>
+            <option>Apoderado</option>
+            <option>Otro</option>
+          </select>
         </label>
 
-        <button type="submit" class="btn btn--primary" disabled>
-          Enviar reseña (solo demostración)
-        </button>
-        <p class="muted" style="font-size: 0.85rem;">
-          Nota: Este formulario es solo demostrativo para el proyecto. No envía datos reales.
-        </p>
+        <label>
+          <span>Comentario</span>
+          <textarea name="message" rows="4" placeholder="Escribe tu opinión..." required></textarea>
+        </label>
+
+        <button type="submit" class="btn btn--primary">Enviar reseña</button>
       </form>
     </div>
   </section>
 
+  <!-- Footer -->
   <footer class="site-footer">
     <div class="container footer__inner">
-      <p>© 2025 Idiomas Fáciles. Proyecto personal de Enzo Ascencio.</p>
+      <p>© 2025 MiSitio. Hecho con ♥ y buenas prácticas.</p>
       <a href="#top" class="btn btn--sm btn--ghost">Ir arriba</a>
     </div>
   </footer>
 
+  <a href="#top" class="to-top" aria-label="Volver arriba">↑</a>
+
 </body>
 </html>
+
