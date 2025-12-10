@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#0e1015" />
-  <title>Mi Web Elegante</title>
+  <title>Idiomas Fáciles – Proyecto</title>
 
   <!-- Fuente elegante y ligera -->
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,16 +15,15 @@
 <body>
   <!-- Header / Nav -->
   <header class="site-header" id="top">
-    <a class="brand" href="index.html" aria-label="Ir al inicio">✨ MiSitio</a>
+    <a class="brand" href="index.html" aria-label="Ir al inicio">✨ Idiomas Fáciles</a>
 
     <nav id="site-nav" class="site-nav" aria-label="Navegación principal">
-      <a href="index.html#hero" class="nav-link">Inicio</a>
-      <a href="index.html#about" class="nav-link">Sobre mí</a>
-      <a href="ingles.html" class="nav-link">Inglés B1</a>
-      <a href="aleman.html" class="nav-link">Alemán B1</a>
-      <a href="index.html#features" class="nav-link">Características</a>
-      <a href="index.html#contact" class="nav-link">Contacto</a>
-      <a href="https://github.com/" target="_blank" rel="noopener" class="btn btn--sm">GitHub</a>
+      <a href="#hero" class="nav-link">Inicio</a>
+      <a href="#about" class="nav-link">Proyecto</a>
+      <a href="#features" class="nav-link">Características</a>
+      <a href="#reviews" class="nav-link">Reseñas</a>
+      <a href="Ingles/ingles.html" class="nav-link">Inglés B1</a>
+      <a href="Aleman/aleman.html" class="nav-link">Alemán A2–B1</a>
     </nav>
   </header>
 
@@ -32,109 +31,116 @@
   <section id="hero" class="section hero">
     <div class="hero__bg" aria-hidden="true"></div>
     <div class="container hero__content">
-      <h1 class="reveal fade-up delay-1">
-        Quieres saber sobre <span class="gradient"> Idiomas </span> Fácil?
+      <h1 class="reveal fade-up">
+        Idiomas Fáciles
       </h1>
-      <p class="muted reveal fade-up delay-2">
-        Idiomas Fáciles.
+      <p class="muted reveal fade-up delay-1">
+        Plataforma educativa para practicar inglés y alemán con unidades claras,
+        explicaciones sencillas y ejercicios interactivos.
       </p>
-      <div class="reveal fade-up delay-3">
-        <a href="#features" class="btn btn--primary">Ver características</a>
-        <a href="#about" class="btn btn--ghost">Saber más</a>
+      <div class="reveal fade-up delay-2">
+        <a href="Ingles/ingles.html" class="btn btn--primary">Explorar Inglés</a>
+        <a href="Aleman/aleman.html" class="btn btn--ghost">Explorar Alemán</a>
       </div>
     </div>
   </section>
 
-  <!-- Sobre mí -->
+  <!-- Proyecto: introducción, objetivos, metas, habilidades -->
   <section id="about" class="section">
     <div class="container grid-2">
-      <div class="reveal slide-right">
-        <h2>Sobre mí</h2>
+      <div>
+        <h2>Introducción al proyecto</h2>
         <p>
-          Me apasiona crear interfaces rápidas, accesibles y hermosas. Esta plantilla está
-          pensada para crecer contigo: componentes reutilizables, animaciones suaves y un
-          sistema de diseño con variables CSS.
+          Este proyecto personal combina mi interés por los idiomas y la programación.
+          El objetivo es ofrecer un sitio web que ayude a estudiantes de nivel A2–B1
+          a reforzar inglés y alemán mediante explicaciones claras y práctica guiada.
         </p>
-        <ul class="ticks">
-          <li>Responsive y accesible</li>
-          <li>Rendimiento primero</li>
-          <li>Sin dependencias pesadas</li>
-        </ul>
+
+        <h3>Objetivo de Aprendizaje</h3>
+        <p>
+          Desarrollar una plataforma digital que organice contenidos lingüísticos de forma
+          estructurada y accesible, permitiendo practicar inglés y alemán a través de
+          unidades de estudio, ejercicios autocorregibles y material de apoyo.
+        </p>
       </div>
-      <div class="reveal zoom-in">
-        <div class="glass card-media">
-          <!-- SVG decorativo -->
-          <svg width="100%" height="100%" viewBox="0 0 300 200" role="img" aria-label="Ilustración abstracta">
-            <defs>
-              <linearGradient id="g1" x1="0" x2="1">
-                <stop offset="0%" stop-color="#6EE7F9" />
-                <stop offset="100%" stop-color="#A78BFA" />
-              </linearGradient>
-              <filter id="blur" x="-10%" y="-10%" width="120%" height="120%">
-                <feGaussianBlur stdDeviation="12" />
-              </filter>
-            </defs>
-            <circle cx="70" cy="60" r="50" fill="url(#g1)" filter="url(#blur)"/>
-            <rect x="120" y="30" width="160" height="120" rx="18" fill="url(#g1)" opacity="0.5"/>
-            <circle cx="220" cy="140" r="40" fill="url(#g1)" />
-          </svg>
-        </div>
+
+      <div class="glass card-media">
+        <h3>Meta del Producto</h3>
+        <ul class="ticks">
+          <li>Contar con secciones independientes para inglés y alemán.</li>
+          <li>Ofrecer unidades con explicaciones breves y ejemplos representativos.</li>
+          <li>Incluir ejercicios interactivos que permitan al estudiante autoevaluarse.</li>
+          <li>Mantener un diseño sencillo, ordenado y cómodo para estudiar.</li>
+        </ul>
+
+        <h3>Habilidades Clave Utilizadas</h3>
+        <ul class="ticks">
+          <li>Comunicación: redacción de explicaciones gramaticales y vocabulario.</li>
+          <li>Pensamiento crítico: selección y organización de contenidos relevantes.</li>
+          <li>Gestión del tiempo: planificación de las unidades y del desarrollo web.</li>
+          <li>Uso de herramientas digitales: HTML, CSS y JavaScript.</li>
+        </ul>
       </div>
     </div>
   </section>
 
-  <!-- Características -->
+  <!-- Características generales del sitio -->
   <section id="features" class="section alt">
     <div class="container">
-      <h2 class="center reveal fade-up">Características</h2>
+      <h2 class="center reveal fade-up">¿Qué ofrece esta página?</h2>
       <p class="center muted reveal fade-up delay-1">
-        Animaciones suaves con CSS + componentes listos para copiar/pegar.
+        Un recorrido organizado por contenidos de inglés y alemán, con enfoque en la práctica y la claridad.
       </p>
 
       <div class="cards">
         <article class="card reveal fade-up">
-          <h3>Animaciones suaves</h3>
-          <p>Entrada y transiciones con CSS. Sin jQuery ni librerías pesadas.</p>
+          <h3>Unidades estructuradas</h3>
+          <p>Cada unidad comienza con una explicación breve y continúa con ejercicios graduados.</p>
         </article>
         <article class="card reveal fade-up delay-1">
-          <h3>Diseño elegante</h3>
-          <p>Tipografía limpia, gradientes sutiles, sombras suaves y glassmorphism.</p>
+          <h3>Ejercicios interactivos</h3>
+          <p>Responde en línea y recibe retroalimentación inmediata sobre tus respuestas.</p>
         </article>
         <article class="card reveal fade-up delay-2">
-          <h3>Rendimiento</h3>
-          <p>CSS mínimo, carga rápida y desplazamiento fluido.</p>
+          <h3>Diseño pensado para estudiar</h3>
+          <p>Interfaz simple, tipografía clara y secciones fáciles de localizar.</p>
         </article>
       </div>
     </div>
   </section>
 
-  <!-- Contacto -->
-  <section id="contact" class="section">
+  <!-- Reseñas -->
+  <section id="reviews" class="section">
     <div class="container grid-2">
-      <div class="reveal slide-left">
-        <h2>Hablemos</h2>
-        <p>¿Ideas, proyectos o preguntas? Envíame un mensaje.</p>
-        <ul class="social">
-          <li><a href="#" aria-label="Twitter">🐦 Twitter</a></li>
-          <li><a href="#" aria-label="Instagram">📸 Instagram</a></li>
-          <li><a href="#" aria-label="LinkedIn">💼 LinkedIn</a></li>
-        </ul>
+      <div>
+        <h2>Reseña del sitio</h2>
+        <p>
+          Si has utilizado esta página, puedes dejar una breve reseña sobre tu experiencia.
+          Esto ayuda a mejorar el proyecto y a orientar mejor los contenidos para futuros estudiantes.
+        </p>
+        <p class="muted">
+          Indica si eres profesor, alumno, apoderado u otro, y comenta qué te ha resultado
+          más útil o qué podrías mejorar.
+        </p>
       </div>
 
-      <form class="form glass reveal zoom-in" autocomplete="on" netlify>
+      <form class="form glass">
         <label>
-          <span>Nombre</span>
-          <input type="text" name="name" placeholder="Tu nombre" required />
+          <span>¿Quién eres?</span>
+          <div class="radio-group">
+            <label><input type="radio" name="tipo" value="profesor"> Profesor</label>
+            <label><input type="radio" name="tipo" value="alumno"> Alumno</label>
+            <label><input type="radio" name="tipo" value="apoderado"> Apoderado</label>
+            <label><input type="radio" name="tipo" value="otro"> Otro</label>
+          </div>
         </label>
+
         <label>
-          <span>Email</span>
-          <input type="email" name="email" placeholder="tunombre@email.com" required />
+          <span>Tu reseña</span>
+          <textarea name="comentario" rows="4" placeholder="Escribe aquí tu opinión sobre la página…"></textarea>
         </label>
-        <label>
-          <span>Mensaje</span>
-          <textarea name="message" rows="4" placeholder="Cuéntame…" required></textarea>
-        </label>
-        <button type="submit" class="btn btn--primary">Enviar</button>
+
+        <button type="submit" class="btn btn--primary">Enviar reseña</button>
       </form>
     </div>
   </section>
@@ -142,7 +148,7 @@
   <!-- Footer -->
   <footer class="site-footer">
     <div class="container footer__inner">
-      <p>© 2025 MiSitio. Hecho con ♥ y buenas prácticas.</p>
+      <p>© 2025 Idiomas Fáciles. Proyecto personal educativo.</p>
       <a href="#top" class="btn btn--sm btn--ghost">Ir arriba</a>
     </div>
   </footer>
